@@ -65,6 +65,8 @@ redrob-ai-recruitment-intelligence/
 ├── requirements.txt
 ├── README.md
 └── submission.csv
+submission.xlsx
+validate_submission.py
 ```
 
 ## 🛠 Tech Stack
