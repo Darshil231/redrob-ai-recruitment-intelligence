@@ -2,6 +2,20 @@
 
 Production-grade candidate ranking for recruiter workflows. The platform parses a job description, filters obvious mismatches, ranks candidates with explainable fast scoring, applies semantic re-ranking only to the shortlist, and returns structured hiring recommendations with CSV and JSON export support.
 
+✨ Features
+Process 100,000 candidate profiles
+Multi-stage AI ranking pipeline
+Job DNA Extraction
+Eligibility Filtering
+Skill Matching
+Career Analysis
+Behavioral Signal Analysis
+Role Relevance Scoring
+Semantic AI Matching (Sentence Transformers)
+Explainable AI Recommendations
+FastAPI REST API
+CSV & JSON Export
+
 ## Architecture
 
 ```text
@@ -30,6 +44,39 @@ Job Description
 - `src/export`: CSV and JSON exporters.
 - `src/api`: FastAPI server for ranking and candidate access.
 - `tests`: Unit tests for parser, DNA, filters, semantic, ranking, and pipeline.
+
+## 📂 Project Structure
+
+```text
+redrob-ai-recruitment-intelligence/
+├── src/
+│   ├── api/
+│   ├── core/
+│   ├── export/
+│   ├── intelligence/
+│   ├── parsers/
+│   ├── ranking/
+│   ├── services/
+│   └── utils/
+├── data/
+├── tests/
+├── exports/
+├── app.py
+├── requirements.txt
+├── README.md
+└── submission.csv
+```
+
+## Tech Stack
+Python 3.11
+FastAPI
+Sentence Transformers
+PyTorch
+NumPy
+Pydantic
+Pytest
+python-docx
+JSON / JSONL / CSV
 
 ## Installation
 
@@ -75,7 +122,8 @@ Example `POST /rank` body:
 }
 ```
 
-If `candidates` is omitted, the service loads `data/candidates.jsonl`.
+> **Note:**  
+> The full `data/candidates.jsonl` dataset is not included in this repository because it exceeds GitHub's 100 MB file size limit. The repository includes `data/sample_candidates.json` for testing and development. To run the complete pipeline on the full dataset, place the official `candidates.jsonl` file in the `data/` directory.
 
 ## Scoring
 
