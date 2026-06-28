@@ -2,19 +2,19 @@
 
 Production-grade candidate ranking for recruiter workflows. The platform parses a job description, filters obvious mismatches, ranks candidates with explainable fast scoring, applies semantic re-ranking only to the shortlist, and returns structured hiring recommendations with CSV and JSON export support.
 
-✨ Features
-Process 100,000 candidate profiles
-Multi-stage AI ranking pipeline
-Job DNA Extraction
-Eligibility Filtering
-Skill Matching
-Career Analysis
-Behavioral Signal Analysis
-Role Relevance Scoring
-Semantic AI Matching (Sentence Transformers)
-Explainable AI Recommendations
-FastAPI REST API
-CSV & JSON Export
+## ✨ Features
+- Process 100,000 candidate profiles
+- Multi-stage AI ranking pipeline
+- Job DNA Extraction
+- Eligibility Filtering
+- Skill Matching
+- Career Analysis
+- Behavioral Signal Analysis
+- Role Relevance Scoring
+- Semantic AI Matching (Sentence Transformers)
+- Explainable AI Recommendations
+- FastAPI REST API
+- CSV & JSON Export
 
 ## Architecture
 
@@ -67,16 +67,17 @@ redrob-ai-recruitment-intelligence/
 └── submission.csv
 ```
 
-## Tech Stack
-Python 3.11
-FastAPI
-Sentence Transformers
-PyTorch
-NumPy
-Pydantic
-Pytest
-python-docx
-JSON / JSONL / CSV
+## 🛠 Tech Stack
+
+- Python 3.11
+- FastAPI
+- Sentence Transformers
+- PyTorch
+- NumPy
+- Pydantic
+- Pytest
+- python-docx
+- JSON / JSONL / CSV
 
 ## Installation
 
